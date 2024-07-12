@@ -1,0 +1,28 @@
+<svg width="1200" height="1200" viewBox="0 0 1200 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="201" y="336" width="800" height="528" fill="white"/>
+<rect x="301" y="362.5" width="153" height="65" rx="18" fill="#F7F7F7"/>
+<text fill="#111111" xml:space="preserve" style="white-space: pre" font-family="Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="24" font-weight="500" letter-spacing="0em"><tspan x="319" y="403.727">Product</tspan></text>
+<path d="M418 394.5L424 400.5L430 394.5" stroke="#111111" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+<text fill="#111111" xml:space="preserve" style="white-space: pre" font-family="Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="24" font-weight="500" letter-spacing="0em"><tspan x="482" y="403.727">Use case</tspan></text>
+<path d="M596 394.5L602 400.5L608 394.5" stroke="#111111" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+<text fill="#111111" xml:space="preserve" style="white-space: pre" font-family="Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="24" font-weight="500" letter-spacing="0em"><tspan x="660" y="403.727">Customers</tspan></text>
+<text fill="#111111" xml:space="preserve" style="white-space: pre" font-family="Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="24" font-weight="500" letter-spacing="0em"><tspan x="832" y="403.727">Demo</tspan></text>
+<path d="M908 394.5L914 400.5L920 394.5" stroke="#111111" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="200" y="454" width="801" height="410" fill="#D4D4D4"/>
+<mask id="path-14-inside-1_49_2" fill="white">
+<path d="M301 454H901V755.5C901 765.441 892.941 773.5 883 773.5H319C309.059 773.5 301 765.441 301 755.5V454Z"/>
+</mask>
+<path d="M301 454H901V755.5C901 765.441 892.941 773.5 883 773.5H319C309.059 773.5 301 765.441 301 755.5V454Z" fill="white"/>
+<path d="M301 454H901H301ZM902.5 755.5C902.5 766.27 893.77 775 883 775H319C308.23 775 299.5 766.27 299.5 755.5H302.5C302.5 764.613 309.887 772 319 772H883C892.113 772 899.5 764.613 899.5 755.5H902.5ZM319 775C308.23 775 299.5 766.27 299.5 755.5V454H302.5V755.5C302.5 764.613 309.887 772 319 772V775ZM902.5 454V755.5C902.5 766.27 893.77 775 883 775V772C892.113 772 899.5 764.613 899.5 755.5V454H902.5Z" fill="#ECECEC" mask="url(#path-14-inside-1_49_2)"/>
+<text fill="#737373" xml:space="preserve" style="white-space: pre" font-family="Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="21" letter-spacing="0em"><tspan x="331" y="504.136">Pre-built</tspan></text>
+<text fill="#111111" xml:space="preserve" style="white-space: pre" font-family="Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="21" letter-spacing="0em"><tspan x="331" y="562.136">UI components</tspan></text>
+<rect x="316" y="585" width="257" height="55" rx="12" fill="#F7F7F7"/>
+<text fill="#111111" xml:space="preserve" style="white-space: pre" font-family="Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="21" letter-spacing="0em"><tspan x="331" y="620.136">Themes</tspan></text>
+<text fill="#111111" xml:space="preserve" style="white-space: pre" font-family="Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="21" letter-spacing="0em"><tspan x="331" y="678.136">Notifications</tspan></text>
+<text fill="#111111" xml:space="preserve" style="white-space: pre" font-family="Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="21" letter-spacing="0em"><tspan x="331" y="736.136">Moderation &#38; analytics</tspan></text>
+<text fill="#737373" xml:space="preserve" style="white-space: pre" font-family="Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="21" letter-spacing="0em"><tspan x="648" y="504.136">Chat SDKs</tspan></text>
+<text fill="#111111" xml:space="preserve" style="white-space: pre" font-family="Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="21" letter-spacing="0em"><tspan x="648" y="562.136">Javascript</tspan></text>
+<text fill="#111111" xml:space="preserve" style="white-space: pre" font-family="Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="21" letter-spacing="0em"><tspan x="648" y="620.136">React</tspan></text>
+<text fill="#111111" xml:space="preserve" style="white-space: pre" font-family="Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="21" letter-spacing="0em"><tspan x="648" y="678.136">React Native</tspan></text>
+<text fill="#111111" xml:space="preserve" style="white-space: pre" font-family="Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="21" letter-spacing="0em"><tspan x="648" y="736.136">Flutter</tspan></text>
+</svg>
