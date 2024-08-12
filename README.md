@@ -1,0 +1,1 @@
+Welcome to my porfolio site, while I coded this myself from scratch (primarily for a FrontEnd Web dev course) I was heavily influenced by https://carlbarenbrug.com/lab, and wanted to make sure credit was given for design inspiration. 
