@@ -9,3 +9,4 @@ function openMe() {
   openMenu.classList.toggle("hidden")
   console.log(openMe)
 }
+

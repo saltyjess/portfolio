@@ -1,16 +1,17 @@
 :root {
     --gap: 1rem;
-    --background-color: #fff;
+    --background-color: #F6F3F2;
     --accent: #dd126c;
-    --border: #eee 1px solid;
+    --border: #E2E2E2 1px solid;
     --dark-bg: hsl(0,0%,5%);
     --dark-border: #333 1px solid;
     --dark-text: hsl(0,0%,90%);
     --dark-text-alt: hsl(0,0%,75%);
-    --c-bg-img: hsl(0, 0%, 95%);
+    --c-bg-img: #F1EEEC;
 }
 * {
     box-sizing: border-box;
+    background-color: var(--background-color);
 }
 body {
     max-width: 1280px;
@@ -49,14 +50,13 @@ body {
     transform: translateX(0%);
 }
 .side-menu-content {
-    font-size: 22px; /* could use ems here I guess but eh... */
-    margin: 24px;
+    font-size: 1.5em; /* could use ems here I guess but eh... */
     padding-left: 0; /* zeroing it out */
 }
 .side-menu-content li {
     text-transform: uppercase;
     list-style: none;
-    margin-bottom: 24px;
+    margin-bottom: 1em;
 }
 .side-menu-header {
     display: flex;
@@ -77,6 +77,10 @@ body {
     border-right: var(--border);
     border-bottom: var(--border);
 }
+.group .adaptive {
+    align-items: center;
+    align-content: center !important;
+}
 .group:last-child {
     border-bottom: var(--border);
 }
@@ -89,7 +93,6 @@ body {
     flex-basis: 380px;
     min-width: 300px;
     border-right: var(--border);
-    align-content: center;
 }
 .alt-width p {
     max-width: 80%;
@@ -102,12 +105,27 @@ img {
     margin-bottom: var(--gap);
     object-position: center;
 }
+.cp_embed_wrapper{
+    margin-bottom: var(--gap);
+}
+.codepen:last-child {
+    margin-bottom: 0 !important;
+}
 img:last-child {
     padding-bottom: 0;
     margin-bottom: 0;
 }
-.project-right img {
-    /* max-height: 500px; */
+.main-project-image img:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 20em;
+    height: 20em;
+    background: rgba(255, 9, 128, 0.726);
 }
 .sticky {
     position: sticky; 
