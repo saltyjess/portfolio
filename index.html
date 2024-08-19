@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" id="main"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en" data-theme="light" id="main"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <head>    
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Jessica Wright | Portfolio</title>
@@ -7,35 +7,42 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body id="top" class="torso">
-    <section class="group adaptive">
+
+
+    <!--hamburger menu-->
+    <div class="side-menu-position side-menu-design hidden" id="side-menu">
+        <ul class="side-menu-content">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./casestudy01.html">Case Study 01 [locked]</a></li>
+            <li><a href="./casestudy02.html">Case Study 02</a></li>
+            <!-- <li>Case Study 03</li> -->
+            <li>FrontEnd work</li>
+            <!-- <li>Archives</li> -->
+            <li>C.V.</li>
+        </ul>
+        <!-- <header class="side-menu-header">
+             <img src="./images/Menu.svg" alt="Close this menu" id="menu-close"> -->
+        <!-- </header>  -->
+    </div>
+
+
+    <section class="group page-title">
         <aside>
-          <h1>Jessica Wright</h1>
+                <h1>Jessica Wright</h1>
         </aside>
         <main class=main-header>
           <h2>Product Design & UX Engineering Portfolio</h2>
           <div class="nav-right">
+            <div class="darkmode" id="darkmode-trigger"><!--night mode trigger-->
+                <!-- <img src="./images/icons/Moon.svg" alt="Light and Darkmode toggle icon"> -->
+                <button type="button" data-theme-toggle aria-label="light mode">light mode</button>
+            </div>
             <div class="hamburger-menu" id="menu-trigger"><!--hamburger menu trigger-->
               <img src="./images/icons/Menu.svg" alt="Hamburger icon">
             </div>
           </div>
         </main>
     </section>
-
-    <!--hamburger menu-->
-    <aside class="side-menu-position side-menu-design hidden" id="side-menu">
-        <ul class="side-menu-content">
-            <li>Home</li>
-            <li>Case Study 01</li>
-            <li>Case Study 02</li>
-            <li>Case Study 03</li>
-            <li>FrontEnd work</li>
-            <li>Archives</li>
-            <li>C.V.</li>
-        </ul>
-        <header class="side-menu-header">
-            <!-- <img src="./images/Menu.svg" alt="Close this menu" id="menu-close"> -->
-        </header>
-    </aside>
 
     <!--contact me-->
     <section class="group">
@@ -44,8 +51,8 @@
         </aside>
         <main class="stacked">
             <a href="mailto:hello@saltyjess.com?subject=Aloha Jess">Email</a>
-            <a href="#">LinkedIn</a>
-            <a href="#">C.V.</a>
+            <a href="https://www.linkedin.com/in/saltydesign/" target="_blank">LinkedIn</a>
+            <a href="file:///Users/jessica.wright/Library/Mobile%20Documents/com~apple~CloudDocs/Documents/Portfolio/JessicaWright-Resume/Resume%202023/Jessica%20Wright%20-%20Resume%20-%20July%202024.pdf" target="_blank">C.V.</a>
         </main>
     </section>
 
@@ -57,8 +64,8 @@
             </div>
         </aside>
         <main class="alt-width">
-            <p>When viewport becomes too narrow to accommodate width requirements of both children, they break into two full-width rows. When viewport becomes too narrow to accommodate width requirements of both children, they break into two full-width rows.</p>
-            <p>When viewport becomes too narrow to accommodate width requirements of both children, they break into two full-width rows. When viewport becomes too narrow to accommodate width requirements of both children, they break into two full-width rows.</p>
+            <p>I'm passionate about creating authentic human connections, practicing design thinking, and collaborating with a motivated, diverse team to create impactful solutions. I bring authenticity, gumption, grit, and an insatiable curiosity to my work and home life.</p>
+            <p>I thrive on tackling complex problems that demand a deep understanding of users, data, business objectives, interface design, and technical limitations.</p>
         </main>
     </section>
 
@@ -73,11 +80,13 @@
                     <li>Collaboration</li>
                     <li>UX design</li>
                 </ul>
-                <img src="./images/icons/Arrow-right.svg" alt="Hamburger icon">
+                <img class="arrow" src="./images/icons/Arrow-right.svg" alt="Arrow to project">
             </div>
         </aside>
         <main class="project-right">
-            <img class="main-project-image" src="./images/home/Marketplace-screen-1.png" alt="" lazyload="">
+            <a href="./casestudy01.html">
+                <img class="main-project-image" src="./images/home/Marketplace-screen-1.png" alt="" lazyload="">
+            </a>
         </main>
     </section>
 
@@ -113,11 +122,13 @@
             </div>
         </aside>
         <main class="codepen">
+            <img class="main-project-image" src="./images/home/CodeSnippits-screen-1.png" alt="" lazyload="">
+<!-- 
             <p data-height="300" data-theme-id="24311" data-slug-hash="YzoxXeR" data-default-tab="result" data-user="saltyjess" data-embed-version="2" class="codepen">See the Pen<a href="https://codepen.io/saltyjess/pen/YzoxXeR">Tempature converter</a> by Jessica Wright (<a href="https://codepen.io/saltyjess">@saltyjess</a>) on <a href="https://codepen.io">CodePen</a>.</p><script async src="https://assets.codepen.io/assets/embed/ei.js"></script>
             <p data-height="500" data-theme-id="24311" data-slug-hash="wvLdEpO" data-default-tab="result" data-user="saltyjess" data-embed-version="2" class="codepen">See the Pen<a href="https://codepen.io/saltyjess/pen/wvLdEpO">Tempature converter</a> by Jessica Wright (<a href="https://codepen.io/saltyjess">@saltyjess</a>) on <a href="https://codepen.io">CodePen</a>.</p><script async src="https://assets.codepen.io/assets/embed/ei.js"></script>
             <p data-height="400" data-theme-id="24311" data-slug-hash="KKjXKgW" data-default-tab="result" data-user="saltyjess" data-embed-version="2" class="codepen">See the Pen<a href="https://codepen.io/saltyjess/pen/KKjXKgW">Tempature converter</a> by Jessica Wright (<a href="https://codepen.io/saltyjess">@saltyjess</a>) on <a href="https://codepen.io">CodePen</a>.</p><script async src="https://assets.codepen.io/assets/embed/ei.js"></script>
-
-        
+            <p data-height="300" data-theme-id="24311" data-slug-hash="mdZpErz" data-default-tab="result" data-user="saltyjess" data-embed-version="2" class="codepen">See the Pen<a href="https://codepen.io/saltyjess/pen/mdZpErz">Tempature converter</a> by Jessica Wright (<a href="https://codepen.io/saltyjess">@saltyjess</a>) on <a href="https://codepen.io">CodePen</a>.</p><script async src="https://assets.codepen.io/assets/embed/ei.js"></script>
+            <p data-height="600" data-theme-id="24311" data-slug-hash="ZEdadbO" data-default-tab="result" data-user="saltyjess" data-embed-version="2" class="codepen">See the Pen<a href="https://codepen.io/saltyjess/pen/ZEdadbO">Tempature converter</a> by Jessica Wright (<a href="https://codepen.io/saltyjess">@saltyjess</a>) on <a href="https://codepen.io">CodePen</a>.</p><script async src="https://assets.codepen.io/assets/embed/ei.js"></script> -->
         </main>
     </section>
 
