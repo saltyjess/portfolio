@@ -30,7 +30,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="left">
-  <a href="https://github.com/saltyjess/repo_name">
+  <a href="https://github.com/saltyjess/portfolio">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -42,7 +42,7 @@
     <br />
     <a href="https://saltyjess.github.io/portfolio/">View Demo</a>
     ·
-    <a href="https://github.com/saltyjess/repo_name/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+    <a href="https://github.com/saltyjess/portfolio/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
   </p>
 </div>
 
@@ -81,7 +81,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `saltyjess`, `repo_name`, `twitter_handle`, `saltydesign`, `email_client`, `email`, `project_title`, `project_description`
+Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `saltyjess`, `portfolio`, `twitter_handle`, `saltydesign`, `saltyjess`, `hello`, `Portfolio`, `project_description`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -105,7 +105,7 @@ To get a local copy up and running follow these simple example steps.
 1. Get a free API Key at [https://example.com](https://example.com)
 2. Clone the repo
    ```sh
-   git clone https://github.com/saltyjess/repo_name.git
+   git clone https://github.com/saltyjess/portfolio.git
    ```
 3. Install NPM packages
    ```sh
@@ -117,7 +117,7 @@ To get a local copy up and running follow these simple example steps.
    ```
 5. Change git remote url to avoid accidental pushes to base project
    ```sh
-   git remote set-url origin saltyjess/repo_name
+   git remote set-url origin saltyjess/portfolio
    git remote -v # confirm the changes
    ```
 
@@ -144,7 +144,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - [ ] Feature 3
     - [ ] Nested Feature
 
-See the [open issues](https://github.com/saltyjess/repo_name/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/saltyjess/portfolio/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -168,8 +168,8 @@ Don't forget to give the project a star! Thanks again!
 
 ### Top contributors:
 
-<a href="https://github.com/saltyjess/repo_name/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=saltyjess/repo_name" alt="contrib.rocks image" />
+<a href="https://github.com/saltyjess/portfolio/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=saltyjess/portfolio" alt="contrib.rocks image" />
 </a>
 
 
@@ -186,7 +186,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - hello@saltyjess.com
 
 Project Link: [https://saltyjess.github.io/portfolio/](https://saltyjess.github.io/portfolio/)
 
@@ -207,16 +207,16 @@ Project Link: [https://saltyjess.github.io/portfolio/](https://saltyjess.github.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/saltyjess/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/saltyjess/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/saltyjess/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/saltyjess/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/saltyjess/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/saltyjess/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/saltyjess/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/saltyjess/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/saltyjess/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/saltyjess/repo_name/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/saltyjess/portfolio.svg?style=for-the-badge
+[contributors-url]: https://github.com/saltyjess/portfolio/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/saltyjess/portfolio.svg?style=for-the-badge
+[forks-url]: https://github.com/saltyjess/portfolio/network/members
+[stars-shield]: https://img.shields.io/github/stars/saltyjess/portfolio.svg?style=for-the-badge
+[stars-url]: https://github.com/saltyjess/portfolio/stargazers
+[issues-shield]: https://img.shields.io/github/issues/saltyjess/portfolio.svg?style=for-the-badge
+[issues-url]: https://github.com/saltyjess/portfolio/issues
+[license-shield]: https://img.shields.io/github/license/saltyjess/portfolio.svg?style=for-the-badge
+[license-url]: https://github.com/saltyjess/portfolio/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/saltydesign
 [product-screenshot]: images/screenshot.png
