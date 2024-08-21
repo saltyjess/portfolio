@@ -34,7 +34,7 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Jessica Wright's Portfolio</h3>
+<h3 align="left">Jessica Wright's Portfolio</h3>
 
   <p align="left">
     Welcome to my porfolio site, while I coded this myself from scratch, using an entirely diferent codebase (primarily for a FrontEnd Web dev course) I was heavily influenced by the design of https://carlbarenbrug.com/lab, and wanted to make sure credit was given.
