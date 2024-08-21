@@ -37,7 +37,7 @@
 <h3 align="left">Jessica Wright's Portfolio</h3>
 
   <p align="left">
-    Welcome to my porfolio site, while I coded this myself from scratch, using an entirely diferent codebase (primarily for a FrontEnd Web dev course) I was heavily influenced by the design of https://carlbarenbrug.com/lab, and wanted to make sure credit was given.
+    Welcome to my porfolio site, while I coded this myself from scratch (primarily for a FrontEnd Web dev course). I was heavily influenced by the design of carlbarenbrug.com, and wanted to make sure credit was given. for the initial design. 
     <br />
     <br />
     <a href="https://saltyjess.github.io/portfolio/">View Demo</a>
