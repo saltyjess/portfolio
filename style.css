@@ -93,6 +93,13 @@ body {
     border-right: var(--border);
     border-bottom: var(--border);
 }
+.side-menu-position {
+    position: absolute;
+    background-color: var(--background-color);
+    z-index: 1 !important;
+    max-width: 1280px;
+    width: 100%;
+}
 .show-menu {
     opacity: 1;
     transform: translateX(0%);
@@ -171,7 +178,10 @@ img:last-child {
 
 .sticky {
     position: sticky; 
-    align-content: space-between;
+    /* align-content: space-between; */
+}
+.sticky-aside {
+    position: relative;
 }
 
 main, aside {
@@ -266,6 +276,13 @@ a:hover {
     .group aside {
         border-right: var(--dark-border);
         border-bottom: var(--dark-border);
+    }
+    @media (width <= 780px) { 
+        aside {
+            border-right: none !important;
+            border-bottom: var(--dark-border);
+        }
+        
     }
 }
 /* this is a weird size, but where it wraps */
