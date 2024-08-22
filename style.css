@@ -50,6 +50,9 @@
     .main-project-image {
         background-color: #282828;
     }
+    .project-image {
+        background: #282828 !important;
+    }
     svg { 
         fill: var(--dark-text)
     }
@@ -94,11 +97,14 @@ body {
     border-bottom: var(--border);
 }
 .side-menu-position {
-    position: absolute;
+    position: fixed;
     background-color: var(--background-color);
     z-index: 1 !important;
-    max-width: 1280px;
     width: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 1em;
 }
 .show-menu {
     opacity: 1;
@@ -122,6 +128,7 @@ body {
     display: flex;
     justify-content: flex-end;
     gap: 10px;
+    align-items: center;
 }
 .hidden {
     display: none !important;
@@ -149,6 +156,9 @@ body {
     flex-basis: 380px;
     min-width: 300px;
     border-right: var(--border);
+}
+.page-title aside{
+    align-content: center;
 }
 .alt-width p {
     max-width: 80%;
@@ -276,6 +286,9 @@ a:hover {
     .group aside {
         border-right: var(--dark-border);
         border-bottom: var(--dark-border);
+    }
+    .project-image {
+        background: #282828 !important;
     }
     @media (width <= 780px) { 
         aside {
