@@ -29,12 +29,14 @@ function moonOn(){
   moonEl.classList.add("hidden")
   sunEl.classList.remove("hidden")
   document.querySelector("html").setAttribute("data-theme", "dark");
+  localStorage.setItem("theme", "dark");
 }
 
 function sunOn() {
   sunEl.classList.add("hidden")
   moonEl.classList.remove("hidden")
   document.querySelector("html").setAttribute("data-theme", "light");
+  localStorage.setItem("theme", "light");
 }
 //dark/light mode - keep the theme on all pages and based on your settings
 //===========================================
@@ -47,8 +49,9 @@ function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark })
     return "dark";
   }
   return "light";
+  console.log(localStorageTheme)
 }
-console.log(calculateSettingAsThemeString)
+
 
 let button = document.querySelector("[data-theme-toggle]");
 

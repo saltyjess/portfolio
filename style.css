@@ -41,7 +41,7 @@
     a {
         color: var(--dark-text);
     }
-    .stacked a {
+    .inline a {
         border-right: var(--dark-border);
     }
     .group aside {
@@ -60,7 +60,16 @@
         border-right: var(--dark-border);
         border-bottom: var(--dark-border);
     }
-
+    .page-title {
+        border-bottom: var(--dark-border);
+    }
+    nav {
+        border-bottom: var(--dark-border);
+        border-right: var(--dark-border);;
+    }
+    .side-menu-position {
+        background-color: var(--dark-bg);
+    }
     @media (width <= 780px) { 
         aside {
             border-right: none !important;
@@ -84,13 +93,7 @@ body {
     font-feature-settings: "onum", "kern", "liga", "clig", "calt";
     hyphens: none;
 }
-.nav {
-    display: none;
-    flex-direction: row;
-    align-items: center;
-    margin: 0;
-    padding-left: 0;
-}
+
 .hamburger-menu {
     display: block; /* display:none starts to show up with responsive */
     cursor: pointer;
@@ -117,7 +120,6 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: center;    
-    transition: all 2s ease-in-out;
 }
 #menu-close:hover {
     cursor: pointer;
@@ -158,6 +160,7 @@ svg:hover {
     display: none !important;
     /* visibility: hidden; */
 }
+
 .group {
     display: flex;
     flex-direction: row;
@@ -178,17 +181,18 @@ svg:hover {
 }
 .sticky {
     position: sticky;
+    top: 1em;
 }
+.sticky-aside {
+    position: relative;
+}
+
 .group aside {
     flex-grow: 1;
     flex-basis: 380px;
     min-width: 300px;
     border-right: var(--border);
 }
-.page-title aside{
-    align-content: center;
-}
-
 img {
     aspect-ratio: 1 / 1;
     /* min-width: 200px; */
@@ -204,60 +208,78 @@ img:hover {
 .cp_embed_wrapper{
     margin-bottom: var(--gap);
 }
-/* .codepen:last-child {
-    margin-bottom: 0 !important;
-} */
 img:last-child {
     padding-bottom: 0;
     margin-bottom: 0;
 }
-
-.sticky {
-    position: sticky; 
-    /* align-content: space-between; */
-}
-/* .sticky-aside {
-    position: relative !important;
-} */
-
 main, aside {
     padding: 1em;
 }
 
-.main-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
 main.stacked, aside.stacked{
     margin: 0;
     padding: 0;
+}
+nav {
+    border-bottom: var(--border);
+    border-right: var(--border);
+    min-height: 68px;
+    align-content: center;
 }
 .stacked {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     align-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
 .back-arrow {
     padding: 0;
     align-items: center;
 }
+.nav-left {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+}
+.nav-right {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    padding-right: 1em;
+}
 .stacked h1 {
     align-content: center;
+    align-items: center;
     padding: 0 1em;
 }
-.stacked a {
+main.inline { 
+    padding: 0;
     align-content: center;
+    align-items: center;
+}
+.inline a{
     padding: 1em;
     border-right: var(--border);
+    display: inline-block;
+    align-content: center;
+    align-items: center;
+    min-height: 60px;
+    margin: 0;
 }
 h1 {
     margin: .15em 0;
     font-size: 1.5em;
     font-weight: 600;
     text-transform: uppercase;
+}
+.h1-large{
+    font-size: 2em;
+    line-height: 1em;
 }
 .main-header h2 {
     font-size: 1.5em;
@@ -278,59 +300,6 @@ a {
 }
 a:hover {
     color: var(--accent);
-}
-@media (prefers-color-scheme: dark) {
-    .adaptive {
-        border: #484851;
-    }
-    body {
-        background-color: var(--dark-bg);
-        color: var(--dark-text);
-    }
-    .group {
-        border-right: var(--dark-border);
-        border-bottom: var(--dark-border);
-    }
-    .group aside {
-        border-right: var(--dark-border);
-    }
-    .txt-alt {
-        color: var(--dark-text-alt);
-    }
-    .group:last-child {
-        border-bottom: var(--dark-border);
-    }
-    p{
-        color: var(--dark-text-alt);
-    }
-    a {
-        color: var(--dark-text);
-    }
-    .stacked a {
-        border-right: var(--dark-border);
-    }
-    .group aside {
-        border-right: var(--dark-border);
-        border-bottom: var(--dark-border);
-    }
-    .project-image {
-        background: #282828 !important;
-    }
-    @media (width <= 780px) { 
-        aside {
-            border-right: none !important;
-            border-bottom: var(--dark-border);
-        }
-        
-    }
-}
-/* this is a weird size, but where it wraps */
-@media (width <= 780px) { 
-    aside {
-        border-right: none !important;
-        border-bottom: var(--border);
-    }
-    
 }
 .project-image {
     display: block;
@@ -358,6 +327,74 @@ button{
 
 
 
+@media (prefers-color-scheme: dark) {
+    .adaptive {
+        border: #484851;
+    }
+    body {
+        background-color: var(--dark-bg);
+        color: var(--dark-text);
+    }
+    .group {
+        border-right: var(--dark-border);
+        border-bottom: var(--dark-border);
+    }
+    .group aside {
+        border-right: var(--dark-border);
+    }
+    .txt-alt {
+        color: var(--dark-text-alt);
+    }
+    .group:last-child {
+        border-bottom: var(--dark-border);
+    }
+    p{
+        color: var(--dark-text-alt);
+    }
+    a {
+        color: var(--dark-text);
+    }
+    .inline a {
+        border-right: var(--dark-border);
+    }
+    .group aside {
+        border-right: var(--dark-border);
+        border-bottom: var(--dark-border);
+    }
+    .project-image {
+        background: #282828 !important;
+    }
+    .page-title {
+        border-bottom: var(--dark-border);
+    }
+    nav {
+        border-bottom: var(--dark-border);
+        border-right: var(--dark-border);;
+    }
+    .side-menu-position {
+        background-color: var(--dark-bg);
+    }
+    @media (width <= 780px) { 
+        aside {
+            border-right: none !important;
+            border-bottom: var(--dark-border);
+        }
+        
+    }
+}
+/* this is a weird size, but where it wraps */
+@media (width <= 780px) { 
+    aside {
+        border-right: none !important;
+        border-bottom: var(--border);
+    }
+    .back-arrow {
+        border-bottom: none;
+    }
+    .mobile-hide { 
+        display: none;
+    }
+}
 
 
 
