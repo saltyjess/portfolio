@@ -47,6 +47,7 @@ function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark })
   }
   if (systemSettingDark.matches) {
     return "dark";
+    console.log(localStorageTheme)
   }
   return "light";
   console.log(localStorageTheme)

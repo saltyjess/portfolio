@@ -72,7 +72,7 @@
         border-right: var(--dark-border);;
     }
     .side-menu-position {
-        background-color: var(--dark-bg);
+        background-color: var(--dark-bg) !important;
     }
     .img-wrapper{
         background: #282828 !important;
@@ -116,7 +116,7 @@ body {
 }
 .side-menu-position {
     position: fixed;
-    background-color: var(--background-color);
+    background-color: var(--background-color) !important;
     z-index: 1 !important;
     width: 100%;
     top: 0;
@@ -387,14 +387,10 @@ button{
         background: #282828 !important;
     }
     
-    }
     .page-title {
         border-bottom: var(--dark-border);
     }
 
-    .side-menu-position {
-        background-color: var(--dark-bg);
-    }
     @media (width <= 780px) { 
         aside {
             border-right: none !important;
