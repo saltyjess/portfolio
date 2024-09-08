@@ -8,6 +8,7 @@
     --dark-text: hsl(0,0%,90%);
     --dark-text-alt: hsl(0,0%,75%);
     --c-bg-img: #F1EEEC;
+    --light-text: hsl(0,0%,5%);
 }
 * {
     box-sizing: border-box;
@@ -54,7 +55,10 @@
         background: #282828 !important;
     }
     svg { 
-        fill: var(--dark-text)
+        fill: var(--dark-text) !important;
+    }
+    .darkmode-text-color {
+        fill: var(--dark-text) !important;
     }
     .side-menu-design {
         border-right: var(--dark-border);
@@ -69,6 +73,9 @@
     }
     .side-menu-position {
         background-color: var(--dark-bg);
+    }
+    .img-wrapper{
+        background: #282828 !important;
     }
     @media (width <= 780px) { 
         aside {
@@ -92,6 +99,7 @@ body {
     margin: 0;
     font-feature-settings: "onum", "kern", "liga", "clig", "calt";
     hyphens: none;
+    color: var(--light-text);
 }
 
 .hamburger-menu {
@@ -128,7 +136,9 @@ svg:hover {
     fill: var(--accent) !important; 
     cursor: pointer;
 }
-
+svg { 
+    fill: var(--light-text);
+}
 .center {
     text-align: center !important;
 }
@@ -195,7 +205,6 @@ svg:hover {
 }
 img {
     aspect-ratio: 1 / 1;
-    /* min-width: 200px; */
     max-width: 100%;
     object-fit: cover;
     margin-bottom: var(--gap);
@@ -305,14 +314,26 @@ a:hover {
     display: block;
     width: 100%;
     background: var(--c-bg-img);
-    /* filter: grayscale(100%); */
 }
 .main-project-image {
     max-height: 500px;
     display: block;
     width: 100%;
     background: var(--c-bg-img);
-    /* filter: grayscale(100%); */
+}
+.alt-project-image {
+    aspect-ratio: auto;
+}
+.border-radius {
+    border-radius: var(--gap);
+}
+.img-wrapper{
+    display: flex;
+    align-content: center;
+    background: var(--c-bg-img);
+    padding: 6em 4em;
+    justify-content: center;
+    flex-wrap: nowrap;
 }
 button{
     font-family: 'Courier New', Courier, monospace;
@@ -357,6 +378,7 @@ button{
     .inline a {
         border-right: var(--dark-border);
     }
+    
     .group aside {
         border-right: var(--dark-border);
         border-bottom: var(--dark-border);
@@ -364,13 +386,12 @@ button{
     .project-image {
         background: #282828 !important;
     }
+    
+    }
     .page-title {
         border-bottom: var(--dark-border);
     }
-    nav {
-        border-bottom: var(--dark-border);
-        border-right: var(--dark-border);;
-    }
+
     .side-menu-position {
         background-color: var(--dark-bg);
     }
