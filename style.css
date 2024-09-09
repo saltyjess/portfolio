@@ -132,9 +132,15 @@ body {
 #menu-close:hover {
     cursor: pointer;
 }
-svg:hover {
+svg:hover, a avg {
+    fill: var(--accent) !important; 
+    color: var(--accent);
+    cursor: pointer;
+}
+a:hover {
     fill: var(--accent) !important; 
     cursor: pointer;
+    color: var(--accent);
 }
 svg { 
     fill: var(--light-text);
@@ -221,6 +227,7 @@ img:last-child {
     padding-bottom: 0;
     margin-bottom: 0;
 }
+
 main, aside {
     padding: 1em;
 }
@@ -307,9 +314,11 @@ a {
     color: #282828;
     text-decoration: none;
 }
-a:hover {
+a:hover{
     color: var(--accent);
+    cursor: pointer;
 }
+
 .project-image {
     display: block;
     width: 100%;
@@ -335,6 +344,9 @@ a:hover {
     justify-content: center;
     flex-wrap: nowrap;
 }
+.margin-bottom {
+    margin-bottom: var(--gap);
+}
 button{
     font-family: 'Courier New', Courier, monospace;
     cursor: pointer;
@@ -345,10 +357,7 @@ button{
 }
 
 
-
-
-
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     .adaptive {
         border: #484851;
     }
@@ -398,7 +407,7 @@ button{
         }
         
     }
-}
+} */
 /* this is a weird size, but where it wraps */
 @media (width <= 780px) { 
     aside {
