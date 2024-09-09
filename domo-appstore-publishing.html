@@ -8,21 +8,30 @@
 </head>
 
 <script>
-    var password = "domo";
-    (function passcodeprotect() {
-       var passcode = prompt("Enter Password");
-       while (passcode !== password) {
-          alert("Incorrect Password");
-        //   return passcodeprotect();
-          window.location.href = "https://exampleURL.com/";
-       }
-    }());
-    // alert('Thanks! Enjoy my case study.');
+
+    document.addEventListener('DOMContentLoaded', (event) => {
+        // Define the correct password
+        const correctPassword = 'domo';
+
+        // Prompt the user for the password
+        const userPassword = prompt('Please enter the password:');
+
+        // Check if the entered password is correct
+        if (userPassword === correctPassword) {
+            // Password is correct, allow access
+            document.getElementById('protected-content').style.display = 'block';
+        } else {
+            // Password is incorrect, redirect to the previous page
+            alert('Incorrect password. Redirecting...');
+            window.history.back();
+        }
+    });
+
  </script>
 
 
 
-<body id="top" class="torso">
+<body id="protected-content" class="torso">
     <nav>
         <div class="stacked">
             <div class="nav-left inline">
@@ -58,64 +67,69 @@
         </ul>
     </div>
 
-    <!--about me-->
+    <!-- section -->
+    <section class="group adaptive">
+        <main>
+            <div>
+                <h1 class="h1-large">Domo - Appstore Publishing experience</h1>
+            </div>
+        </main>
+    </section>
+
+
+    <!--section-->
     <section class="group adaptive">
         <aside>
             <div class="sticky">
-                <h2>About</h2>
+                <h2>ABOUT</h2>
             </div>
         </aside>
         <main class="alt-width">
-            <h2>Problem</h2>
-            <p>Publishing to the Appstore in its current state is extremely challenging. The process is complex and acts as a barrier for individuals looking to list their app on the platform. Minimizing obstacles in the publishing process is crucial for the success of the Appstore.</p>
-            <h2>Solution</h2>
-            <p>The main objective is to remove friction to publish a listing on the new Appstore. Keep the listing process simple, yet provide users the capabilities to publish advanced configurations for complex listings. Allow users to start creating and editing a listing separately from adding assets. </p>
- 
+            <p>This project is still under construction.</p>
         </main>
     </section>
 
 
-
-    <!--case study 01-->
-    <section class="group">
+    <!--section-->
+    <section class="group adaptive">
         <aside>
             <div class="sticky">
-                <h2>Case Study: <br><span>Domo AppStore Rebuild</span></h2>
-                <ul>
-                    <li>Process</li>
-                    <li>Collaboration</li>
-                    <li>UX design</li>
-                </ul>
+                <h2>Problem</h2>
             </div>
         </aside>
-        <main class="project-right">
-            <img class="project-image" src="./images/home/Marketplace-screen-1.png" alt="" lazyload="">
-            <img class="project-image" src="./images/home/Marketplace-screen-1.png" alt="" lazyload="">
+        <main class="alt-width">
+            <p>Publishing to the Appstore in its current state is extremely challenging. The process is complex and acts as a barrier for individuals looking to list their app on the platform.</p>
+            <p>Minimizing obstacles in the publishing process is crucial for the success of the Appstore.</p>
         </main>
     </section>
 
-
-
-    <!--case study 02-->
-    <section class="group">
+    <!--section-->
+    <section class="group adaptive">
         <aside>
             <div class="sticky">
-                <h2>Case Study: <br><span>Domo AppStore Rebuild</span></h2>
-                <ul>
-                    <li>Process</li>
-                    <li>Collaboration</li>
-                    <li>UX design</li>
-                </ul>
+                <h2>Solution</h2>
             </div>
         </aside>
-        <main class="project-right">
-            <img class="project-image" src="./images/home/Utah-screen-1.png" alt="" lazyload="">
-            <img class="project-image" src="./images/home/Marketplace-screen-1.png" alt="" lazyload="">
-
+        <main class="alt-width">
+            <p>The main objective is to remove friction to publish a listing on the new Appstore. </p>
+            <p>Keep the listing process simple, yet provide users the capabilities to publish advanced configurations for complex listings. </p> 
+            <p>Allow users to start creating and editing a listing separately from adding assets. </p>
         </main>
     </section>
 
 
+    <!--section-->
+    <section class="group adaptive">
+        <aside>
+            <div class="sticky">
+                <h2>Initial prototype</h2>
+            </div>
+        </aside>
+        <main class="alt-width">
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="700" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FmyvRy0rH5lmd4Nh8c3QbK3%2FDOMO---Appstore-Publishing-Experieince%3Fpage-id%3D0%253A1%26node-id%3D1-44826%26node-type%3DFRAME%26viewport%3D2254%252C540%252C0.07%26t%3DdxACdUAN9iLZHbZw-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26starting-point-node-id%3D1%253A44826" allowfullscreen></iframe>
+
+        </main>
+    </section>
 
     <script src="./js/script.js"></script>
 
